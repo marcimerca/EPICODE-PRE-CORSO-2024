@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Streaming</title>
+    <style>
+      input {
+        height: 20px;
+        margin: 10px auto;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      text-align: center;
+      background-image: linear-gradient(
+        90deg,
+        hsla(191, 88%, 81%, 1) 0%,
+        hsla(260, 72%, 82%, 1) 50%,
+        hsla(247, 73%, 69%, 1) 100%
+      );
+    "
+  >
+    <h1>MUSIC STREAMING</h1>
+    <h2>Pagina di registrazione</h2>
+    <form onsubmit="alert('Registrazione inviata!')">
+      <div>
+        <input type="text" placeholder="Nome" />
+      </div>
+      <div>
+        <input type="text" placeholder="Cognome" />
+      </div>
+      <div>
+        <input type="email" placeholder="E-mail" />
+      </div>
+      <div>
+        <label>Data di nascita: </label>
+        <input type="date" />
+      </div>
+      <div>
+        <input type="number" placeholder="Cellulare" />
+      </div>
+      <div>
+        <h3>Selezionare uno o più generi musicali preferiti</h3>
+        <div
+          style="
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+          "
+        >
+          <input type="checkbox" />
+          <label>Rock</label>
+          <input type="checkbox" />
+          <label>Pop</label>
+          <input type="checkbox" />
+          <label>Indie</label>
+          <input type="checkbox" />
+          <label>Rap</label>
+          <input type="checkbox" />
+          <label>Jazz</label>
+        </div>
+      </div>
+
+      <div style="margin-top: 100px">
+        <p style="margin: 0 auto; text-align: center; width: 500px">
+          Termini e condizioni per l'uso del servizio di streaming musicale:
+          L'utente è responsabile della sicurezza dell'account e deve fornire
+          informazioni accurate durante la registrazione. L'account non può
+          essere condiviso con terzi.
+        </p>
+        <input type="radio" name="Termini e condizioni" />
+        <label>Accetto</label>
+        <input type="radio" name="Termini e condizioni" />
+        <label>Non accetto</label>
+      </div>
+      <button type="submit">Invia Registrazione</button>
+    </form>
+  </body>
+</html>
